@@ -89,7 +89,7 @@ function checkGameStatus() {
   ) {
     noLoop();
     const scoreVal = parseInt(scoreElem.html().substring(8));
-    scoreElem.html('游戏结束! 你的分数是 : ' + scoreVal);
+    scoreElem.html('Game over! score : ' + scoreVal);
   }
 }
 
