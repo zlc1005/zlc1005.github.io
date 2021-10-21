@@ -2,3 +2,5 @@
 [Greedy snake](greedy_snake.html)
 
 [kaleidoscope](wht.html)
+
+[Wavemaker](w.html)
