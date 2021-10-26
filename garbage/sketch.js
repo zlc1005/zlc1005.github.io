@@ -30,10 +30,8 @@ function preload() {
 imgxy=100,100
 d=0
 r=0
-scoreElem = createDiv()
-scoreElem.position(20, 20)
-scoreElem.style('color', 'white')
 function setup() {
+    asdfg=[]
     createCanvas(1000, 700)
     qu=[
         [apple,kit,500,500],
@@ -49,6 +47,9 @@ function setup() {
         [light,har,400,500],
         [yytt,other,500, 500]
     ]
+    scoreElem = createDiv()
+    scoreElem.position(20, 20)
+    scoreElem.style('color', 'white')
     //backgroundImg.mousePressed(quq)
 }
 // make a function to show some text on screen
@@ -87,9 +88,13 @@ function choose(list) {
 // make a function
 // if a=[1,2,3] b=1 return [2,3]
 function remove(a, b) {
-    return a.filter(function (x) {
-        return x != b
-    })
+    var c = []
+    for (var i = 0; i < a.length; i++) {
+        if (a[i] != b) {
+            c.push(a[i])
+        }
+    }
+    return c
 }
 // make a function to round a number
 function round(num, n) {
