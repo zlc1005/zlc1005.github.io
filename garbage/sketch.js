@@ -13,25 +13,26 @@ function preload() {
     kit.position(696+60*2,106+80*2)
     har.position(817,106)
     other.position(817-60*2,106+80*2)
-    apple = loadImage("https://zlc1005.github.io/garbage/apple.jpg")
-    banana = loadImage('https://zlc1005.github.io/garbage/xj.jpg')
-    coke = loadImage('https://zlc1005.github.io/garbage/kl.jpg')
-    dhj = loadImage('https://zlc1005.github.io/garbage/dhj.jpg')
-    news = loadImage('https://zlc1005.github.io/garbage/bz.jpg')
-    battery = loadImage('https://zlc1005.github.io/garbage/dc.jpg')
-    pizza = loadImage('https://zlc1005.github.io/garbage/pizza.png')
-    pc = loadImage('https://zlc1005.github.io/garbage/dn.jpg')
-    paper = loadImage('https://zlc1005.github.io/garbage/cz.webp')
-    battle = loadImage('https://zlc1005.github.io/garbage/slsp.jpg')
-    light = loadImage('https://zlc1005.github.io/garbage/dp.jpg')
-    yytt = loadImage('https://zlc1005.github.io/garbage/yt.jpg')
+    apple = [loadImage("https://zlc1005.github.io/garbage/apple.jpg"),'apple']
+    banana = [loadImage('https://zlc1005.github.io/garbage/xj.jpg'),'banana']
+    coke = [loadImage('https://zlc1005.github.io/garbage/kl.jpg'),'coke']
+    dhj = [loadImage('https://zlc1005.github.io/garbage/dhj.jpg'),'dhj']
+    news = [loadImage('https://zlc1005.github.io/garbage/bz.jpg'),'news']
+    battery = [loadImage('https://zlc1005.github.io/garbage/dc.jpg'),'battery']
+    pizza = [loadImage('https://zlc1005.github.io/garbage/pizza.png'), 'pizza']
+    pc = [loadImage('https://zlc1005.github.io/garbage/dn.jpg'), 'pc']
+    paper = [loadImage('https://zlc1005.github.io/garbage/cz.webp'), 'paper']
+    battle = [loadImage('https://zlc1005.github.io/garbage/slsp.jpg'), 'battle']
+    light = [loadImage('https://zlc1005.github.io/garbage/dp.jpg'), 'light']
+    yytt = [loadImage('https://zlc1005.github.io/garbage/yt.jpg'), 'yytt']
     liii=[recy,kit,har,other]
 }
 imgxy=100,100
 d=0
 r=0
 function setup() {
-    asdfg=[]
+    console.log('setup')
+    azz=0
     createCanvas(1000, 700)
     qu=[
         [apple,kit,500,500],
@@ -59,19 +60,21 @@ function showText(text, x, y ,color='black') {
     scoreElem.html(text)
 }
 function draw() {
+    azz=azz+1
     backgroundImg.size(1000, 700)
     backgroundImg.position(0, 0)
     asd=mouseX+','+mouseY
     show_time()
     showText(asd,0,20)
     imaa=choose(qu)
-    show_image(imaa[0],100,100)
+    show_image(imaa[0][0],100,100)
     imaa[1].mousePressed(alert_right)
-    asdfg=remove(liii,imaa)
+    asdfg=arrayRemove(liii,imaa[1])
+    console.log('draw:'+azz+'   img='+imaa[1])
     asdfg[0].mousePressed(alert_not_right)
     asdfg[1].mousePressed(alert_not_right)
     asdfg[2].mousePressed(alert_not_right)
-    showText('right:'+r+'  wrong:'+d+'   Correct Rate:'+zql(r,d),0,40)
+    showText('right:'+r+'  wrong:'+d-r+'   Correct Rate:'+zql(r,d)+'%',0,40)
 }
 // make a function to show a image on screen
 function show_image(img, x, y) {
@@ -85,21 +88,17 @@ function show_time() {
 function choose(list) {
     return list[floor(random(list.length))]
 }
-// make a function
-// if a=[1,2,3] b=1 return [2,3]
-function remove(a, b) {
-    var c = []
-    for (var i = 0; i < a.length; i++) {
-        if (a[i] != b) {
-            c.push(a[i])
-        }
-    }
-    return c
-}
 // make a function to round a number
 function round(num, n) {
     return Math.round(num * Math.pow(10, n)) / Math.pow(10, n)
 }
+// make a function, if a=[1,2,3,4] and b=2, return [1,3,4]
+function arrayRemove(arr, value) {
+    return arr.filter(function(ele){
+        return ele != value;
+    });
+}
+// ===========================================================
 function zql(a, b) {
     rate = a / b * 100
     rate=round(rate,2)
