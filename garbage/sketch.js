@@ -26,14 +26,14 @@ function preload() { // preload() is load all the images
     yytt = [loadImage('https://zlc1005.github.io/garbage/yt.jpg'), 'yytt']// yytt
     liii=[recy,kit,har,other]// set the list of all the images
 }
-imgxy=100,100// imgxy=100,100
+imgxy=100,100// set the position of the image
 d=0//点击次数
 r=0//right次数
 function setup() { // setup() is set up the canvas
     console.log('setup')// show the log in the console
     azz=0// set azz=0
     createCanvas(1000, 700) // set the canvas size 
-    qu=[// set the list of the images
+    qu=[// set the list of all the images
         [apple,kit,500,500],
         [banana,kit,550,400],
         [coke,recy,550,400],
@@ -46,7 +46,7 @@ function setup() { // setup() is set up the canvas
         [battle,recy,500, 500],
         [light,har,400,500],
         [yytt,other,500, 500]
-    ]// qu=[apple,banana,coke,dhj,news,battery,pizza,pc,paper,battle,light,yytt]
+    ]
     scoreElem = createDiv()// create a div
     scoreElem.position(20, 20)// set position of the div
     scoreElem.style('color', 'white')// set the color of the div
@@ -68,12 +68,13 @@ function draw() {// draw() is to draw the canvas
     imaa=choose(qu)// choose a value in the list
     show_image(imaa[0][0],100,100)// show the image
     imaa[1].mousePressed(alert_right)// make the image can be clicked
-    asdfg=arrayRemove(liii,imaa[1])// remove the image from the list
+    asdfg=arrayRemove(liii,imaa)// remove the image from the list
     console.log('draw:'+azz+'   img='+imaa[1])// show the number of times draw() will run
     asdfg[0].mousePressed(alert_not_right)// make the image can be clicked
     asdfg[1].mousePressed(alert_not_right)// make the image can be clicked
     asdfg[2].mousePressed(alert_not_right)// make the image can be clicked
     showText('right:'+r+'  wrong:'+d-r+'   Correct Rate:'+zql(r,d)+'%',0,40)// show the score and the correct rate
+    setTimeout(function(){}, 2000)
 }
 // make a function to show a image on screen
 function show_image(img, x, y) { // show_image(img, x, y)
@@ -97,7 +98,7 @@ function arrayRemove(arr, value) { // arrayRemove(arr, value)
         return ele != value;// return the value that is not equal to the value
     });
 }
-// ===========================================================
+// =====================================================================================================================
 function zql(a, b) {// zql(a, b)
     rate = a / b * 100// rate is the correct rate
     rate=round(rate,2)//round(rate,2)
