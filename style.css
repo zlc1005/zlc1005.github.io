@@ -6,3 +6,9 @@ html, body {
 canvas {
   display: block;
 }
+#spinner {
+  position: fixed;
+  z-index: 9999999;
+  width: 100%;
+  height: 100%;
+}
