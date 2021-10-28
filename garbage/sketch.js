@@ -1,3 +1,9 @@
+
+$(function () {
+    setTimeout(function(){ $('#spinner').fadeOut(); }, 5000);
+
+})
+
 function preload() { // preload() is load all the images
     backgroundImg = loadImage("https://zlc1005.github.io/garbage/background.jpg")
     recy = createImg('https://zlc1005.github.io/garbage/a.bmp', 'alt')
@@ -30,9 +36,6 @@ imgxy = 100, 100// set the position of the image
 d = 0//点击次数
 w = 0// wrong
 r = 0//right次数
-$(function () {
-    $('#spinner').fadeOut();
-})
 function setup() { // setup() is set up the canvas
     createCanvas(1000, 700) // set the canvas size
     background(backgroundImg)// set the background
