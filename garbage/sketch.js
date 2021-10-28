@@ -29,6 +29,7 @@ function preload() { // preload() is load all the images
 }
 imgxy = 100, 100// set the position of the image
 d = 0//点击次数
+w=0// wrong
 r = 0//right次数
 function setup() { // setup() is set up the canvas
     createCanvas(1000, 700) // set the canvas size
@@ -50,8 +51,8 @@ function setup() { // setup() is set up the canvas
     scoreElem = createDiv()
     timer = createDiv()
     XYpos = createDiv()
-    imagess=choose(qu)
-    t=null
+    imagess = choose(qu)
+    t = null
     image(imagess[0][0], 100, 100, imagess[2], imagess[3])// item, x,y,w,h
     //backgroundImg.mousePressed(quq)
 }
@@ -75,7 +76,7 @@ function clear_all() {// clear_all()
 function draw() {
     showText(timer, hour() + ': ' + minute() + ':' + second(), 0, 0)// show the time// show the time
     showText(XYpos, 'x: ' + mouseX + 'y:' + mouseY, 0, 20)
-    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (d - r) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 0, 40)// score and the correct rate
+    showText(scoreElem, 'Right:' + r + '&nbsp &nbsp Wrong:' + (w) + '&nbsp &nbspCorrectate:' + zql(r, d) + '%', 0, 40)// score and the correct rate
     //imaa=choose(qu)// choose a value in the list
     play()// play the game
     //image(imaa[0][0],100,100,120,160)//item, x,y,w,h
@@ -114,7 +115,7 @@ function arrayRemove(arr, value) { // arrayRemove(arr, value)
 function zql(a, b) {// zql(a, b)
     if (a == 0) return 0
     rate = a / b * 100// rate is the correct rate
-    rate = rounds(rate, 2)//round(rate,2)
+    rate = rounds(rate, 0)//round(rate,2)
     return rate// return the correct rate
 }
 
@@ -128,20 +129,27 @@ function alert_right() {// alert_right()
 
 function alert_not_right() {
     d = d + 1// set the number of times the button is clicked
+    w = w + 1// set the wrong number
     alert("You aren't right.")// alert:You aren't right.
+    tr()
 }
-function tr(){
-    t=true// set t to true
+function tr() {
+    t = true// set t to true
 }
 function play() {
     if (t) {// if t is true
-        imagess=choose(qu)// choose a value in the list
+        bf_imagess = imagess// set bf_imagess to imagess
+        imagess = choose(qu)// choose a value in the list
         clear_all()// clear the background
+        while (bf_imagess == imagess) {// while bf_imagess is not equal to imagess
+            bf_imagess = imagess// set bf_imagess to imagess
+            imagess = choose(qu)// choose a value in the list
+        }
         image(imagess[0][0], 100, 100, imagess[2], imagess[3])// item, x,y,w,h
     }//none
-    t=false// set t to false
+    t = false// set t to false
     imagess[1].mousePressed(alert_right)// make the image can be clicked
-    imagesss=arrayRemove(liii,imagess[1])// remove the image from the list
+    imagesss = arrayRemove(liii, imagess[1])// remove the image from the list
     //console.log('draw:'+azz+'   img='+imaa[1])// show the number of times draw() will run
     imagesss[0].mousePressed(alert_not_right)// make the image can be clicked
     imagesss[1].mousePressed(alert_not_right)// make the image can be clicked
