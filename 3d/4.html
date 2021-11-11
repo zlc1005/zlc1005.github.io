@@ -1,0 +1,1249 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>网页特效代码_HTML特效_js特效_css特效代码</title>
+<meta name="robots" content="all">
+<meta
+	content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+	name="viewport" />
+<meta name="keywords" content="网页特效  HTML特效 js特效 css特效 代码">
+<meta name="description"
+	content="旨在为热爱html的开发人员提供一个线上的技术学习、作品展示和交流平台，你可以将自己的特效作品发布上来进行学习交流,包括css特效、js特效、html网页特效。">
+<link type="text/css" rel="stylesheet"
+	href="//img.bfw.wiki/static/Blog/css/bfw.css">
+<script id="bfwone"
+	data="dep=jquery.17&ujb=//img.bfw.wiki/static/Blog/js/&ucb=//img.bfw.wiki/static/Blog/css/&loadcss=one&loadjs=effectindex"
+	type="text/javascript"
+	src="//repo.bfw.wiki/bfwrepo/js/bfwone-min.js?v=20201120"></script>
+<style>
+.plugin-item:hover {
+	color: white;
+	background:#c8edff;
+	box-shadow: 0 0 10px #c8edff;
+}
+
+
+
+.plugin-item:hover .hover-tool {
+	display: block !important;
+}
+
+.hover-tool {
+	z-index: 1;
+	text-align: center;
+	width: 100%;
+	top: 0;
+	left: 0;
+	right: 0;
+	padding: 0;
+	margin: 0;
+	height: 52px;
+}
+</style>
+
+</head>
+<body class="bfw-m-font-16 bfw-l-font-16 bfw-s-font-16">
+
+	<div class="bfw-cont ">
+
+	<div class="bfw-header  bfw-width-per">
+	<div class="bfw-nav-bar bfw-color-b-b bfw-color-w bfw-over-h "
+		style="height: 5em;">
+		<div class="bfw-nav-item ">
+
+						<a href="http://www.bfw.wiki/"><img title="返回BFW首页"
+				style="height: 5em; margin: 0.15em 0.3125em 0.1875em 0.3125em;"
+				src="//img.bfw.wiki/static/Blog/image/logo.png" /></a>
+
+				<a title="网页html、css、js特效" href="http://effect.bfw.wiki/" style="
+          color: #2596cc;
+    float: right;
+    margin-top: 18px;
+    font-size: 15px;
+    margin-right: 14px;
+    word-wrap: break-word;
+    letter-spacing: 20px;
+    width: 16px;
+    border: 1px solid;
+    padding: 2px;
+">特效</a>
+					</div>
+<link type="text/css" rel="stylesheet"
+	href="//repo.bfw.wiki/bfwrepo/css/font-awesome-4.7.0/css/font-awesome.css">
+<style>
+.nav-item a{
+	display: inline-block;
+	padding:3px;
+}
+</style>
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+			<a class="">技术学习</a>
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+					<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a class="bfw-nav-a" href="https://blog.bfw.wiki"
+									title="分享技术，共同提高">技术博客</a>
+							</p>
+							<p>
+								<a href="https://blog.bfw.wiki/page_ai.html">人工智能</a> <a href="https://blog.bfw.wiki/page_data.html">大数据</a> <a href="https://blog.bfw.wiki/page_web.html">前端开发</a> <a href="https://blog.bfw.wiki/page_arch.html">架构</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-4 sub_menu_item">
+				<div class="bfw-pad-l">
+							<p>
+								<a class="bfw-nav-a" href="https://ask.bfw.wiki">技术问答</a>
+							</p>
+							<p>
+								<input style="width:260px;" id="ask_keyword" autocomplete="off" onkeydown="entersearch(event);" type="search" placeholder="输入问题查找答案" />
+							</p>
+						</div>
+
+					</div>
+					<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a class="bfw-nav-a" title="IT资料资源下载" href="https://down.bfw.wiki">IT资料下载</a>
+							</p>
+							<p>
+								<a href="https://down.bfw.wiki">提供it学习资料上传下载服务</a>
+							</p>
+						</div>
+
+					</div>
+	               <div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a class="bfw-nav-a" title="视频课程，沉浸式教学" href="https://school.bfw.wiki">视频课程</a>
+							</p>
+							<p>
+								<a href="https://school.bfw.wiki">java入门</a><a  href="https://school.bfw.wiki">php入门</a><a  href="https://school.bfw.wiki">人工智能入门</a>
+							</p>
+						</div>
+
+					</div>
+
+
+
+					<div class="bfw-clear"></div>
+				</div>
+			</div>
+		</div>
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a class="">开发工具</a>
+
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+					<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://studio.bfw.wiki" class="bfw-nav-a">在线开发环境WEBIDE</a>
+							</p>
+							<p>
+
+									<a  href="https://studio.bfw.wiki/Studio/Open/lang/html.html"
+			target="_blank" title="在线运行html代码-html在线开发环境">Html</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/py.html"
+			target="_blank" title="在线运行python代码-python在线开发环境">Python</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/java.html"
+			target="_blank" title="在线运行java代码-java在线开发环境">Java</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/php.html"
+			target="_blank" title="在线运行php代码-php在线开发环境">Php</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/phpcli.html"
+			target="_blank" title="在线运行phpcli代码-phpcli在线开发环境">Phpcli</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/go.html"
+			target="_blank" title="在线运行golang代码-golang在线开发环境">Golang</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/cs.html"
+			target="_blank" title="在线运行c#代码-c#在线开发环境">C#</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/nodejs.html"
+			target="_blank" title="在线运行nodejs代码-nodejs在线开发环境">Nodejs</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/c.html"
+			target="_blank" title="在线运行c代码-c在线开发环境">C</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/cpp.html"
+			target="_blank" title="在线运行c++代码-c++在线开发环境">C++</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/sql.html"
+			target="_blank" title="在线运行sql代码-sql在线开发环境">Sql</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/r.html"
+			target="_blank" title="在线运行r代码-r在线开发环境">R</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/rs.html"
+			target="_blank" title="在线运行rust代码-rust在线开发环境">Rust</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/rb.html"
+			target="_blank" title="在线运行ruby代码-ruby在线开发环境">Ruby</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/dart.html"
+			target="_blank" title="在线运行dart代码-dart在线开发环境">Dart</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/vb.html"
+			target="_blank" title="在线运行vb代码-vb在线开发环境">Vb</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/d.html"
+			target="_blank" title="在线运行d代码-d在线开发环境">D</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/fsx.html"
+			target="_blank" title="在线运行f#代码-f#在线开发环境">F#</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/ts.html"
+			target="_blank" title="在线运行typescript代码-typescript在线开发环境">Typescript</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/coffee.html"
+			target="_blank" title="在线运行coffeescript代码-coffeescript在线开发环境">Coffeescript</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/jl.html"
+			target="_blank" title="在线运行julia代码-julia在线开发环境">Julia</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/kt.html"
+			target="_blank" title="在线运行kotlin代码-kotlin在线开发环境">Kotlin</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/pl.html"
+			target="_blank" title="在线运行perl代码-perl在线开发环境">Perl</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/groovy.html"
+			target="_blank" title="在线运行groovy代码-groovy在线开发环境">Groovy</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/lua.html"
+			target="_blank" title="在线运行lua代码-lua在线开发环境">Lua</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/vala.html"
+			target="_blank" title="在线运行vala代码-vala在线开发环境">Vala</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/ml.html"
+			target="_blank" title="在线运行ocaml代码-ocaml在线开发环境">Ocaml</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/asm.html"
+			target="_blank" title="在线运行assembly代码-assembly在线开发环境">Assembly</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/m.html"
+			target="_blank" title="在线运行objectc代码-objectc在线开发环境">Objectc</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/scala.html"
+			target="_blank" title="在线运行scala代码-scala在线开发环境">Scala</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/erl.html"
+			target="_blank" title="在线运行erlang代码-erlang在线开发环境">Erlang</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/pas.html"
+			target="_blank" title="在线运行pascal代码-pascal在线开发环境">Pascal</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/swift.html"
+			target="_blank" title="在线运行swift代码-swift在线开发环境">Swift</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/f.html"
+			target="_blank" title="在线运行fortran代码-fortran在线开发环境">Fortran</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/sh.html"
+			target="_blank" title="在线运行bash代码-bash在线开发环境">Bash</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/clj.html"
+			target="_blank" title="在线运行clojure代码-clojure在线开发环境">Clojure</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/adb.html"
+			target="_blank" title="在线运行ada代码-ada在线开发环境">Ada</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/exs.html"
+			target="_blank" title="在线运行elixir代码-elixir在线开发环境">Elixir</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/cob.html"
+			target="_blank" title="在线运行cobol代码-cobol在线开发环境">Cobol</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/hs.html"
+			target="_blank" title="在线运行haskell代码-haskell在线开发环境">Haskell</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/nim.html"
+			target="_blank" title="在线运行nim代码-nim在线开发环境">Nim</a>
+
+			<a  href="https://studio.bfw.wiki/Studio/Open/lang/rkt.html"
+			target="_blank" title="在线运行racket代码-racket在线开发环境">Racket</a>
+
+	
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://tool.bfw.wiki"
+									title="在线工具箱">程序员工具箱</a>
+							</p>
+							<p>
+								<a href="https://tool.bfw.wiki/tool/1559286383549195.html">js压缩混淆</a><a href="https://tool.bfw.wiki/tool/1559557883107563.html">图片压缩</a><a href="https://tool.bfw.wiki/tool/1559557890275187.html">sqlite在线打开</a>
+							</p>
+						</div>
+
+					</div>
+					<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a">开发框架</a>
+							</p>
+							<p>
+								<a href="http://ui.bfw.wiki">前端框架bfwui</a><a href="https://one.bfw.wiki">js按需加载bfwone</a><a href="http://soa.bfw.wiki">soa框架bfwsoa</a><a href="http://sea.bfw.wiki">分布式大数据框架bfwsea</a>
+							</p>
+						</div>
+
+					</div>
+
+<div class="bfw-row-4 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a">离线开发环境</a>
+							</p>
+							<p>
+								<a href="http://kit.bfw.wiki">php集成开发包（bfwkit）</a>
+							</p>
+						</div>
+
+					</div>
+<div class="bfw-clear"></div>
+
+				</div>
+			</div>
+		</div>
+
+
+
+
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a class="">模板素材</a>
+
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://one.bfw.wiki"
+									title="精选js插件，一次引入，按需加载">js插件库</a>
+							</p>
+							<p>
+								<a  href="https://one.bfw.wiki/plugin-slider.html">幻灯片</a><a href="https://one.bfw.wiki/plugin-ai.html">人工智能</a><a  href="https://one.bfw.wiki/plugin-db.html">数据库</a><a  href="https://one.bfw.wiki/plugin-form.html">表单</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://effect.bfw.wiki"
+									title="html特效学习展示平台">html特效</a>
+									<a  class="bfw-nav-a" href="https://code.bfw.wiki"
+									title="代码就是艺术，展示自己的代码吧">代码库</a>
+							</p>
+							<p>
+								<a href="https://effect.bfw.wiki/effect-threed.html">三维</a><a href="https://effect.bfw.wiki/effect-particle.html">粒子</a><a href="https://effect.bfw.wiki/effect-parallex.html">视觉差异</a><a href="https://effect.bfw.wiki/effect-animate.html">动画</a>
+							</p>
+						</div>
+
+					</div>
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://template.bfw.wiki"
+									title="搜集最新最全的免费源码模板资源">系统模板</a> <a  class="bfw-nav-a" href="https://project.bfw.wiki"
+									title="你想找的这里都有">系统源码</a>
+							</p>
+							<p>
+								<a href="https://template.bfw.wiki">企业建站</a><a href="https://template.bfw.wiki">电商</a><a href="https://template.bfw.wiki">博客</a><a>大数据</a><a href="https://template.bfw.wiki">人工智能</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a   class="bfw-nav-a" href="https://asset.bfw.wiki"
+									title="前端资源库，图片、图标、音视频素材库">前端素材</a>
+							</p>
+							<p>
+								<a href="https://asset.bfw.wiki/icon/0/0.html">图标</a><a href="https://asset.bfw.wiki/image/0/0.html">图片</a><a href="https://asset.bfw.wiki/font/0/0.html">字体</a><a href="https://asset.bfw.wiki/video/0/0.html">视频</a><a href="https://asset.bfw.wiki/sound/0/0.html">音频</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://asset.bfw.wiki/model/0/0.html"
+									title="人工智能模型，一步到位，快人一步">人工智能模型</a>
+							</p>
+							<p>
+								<a href="https://asset.bfw.wiki/model/5Lq66IS4/0.html">人脸识别模型</a><a href="https://asset.bfw.wiki/model/0/0.html">语音识别模型</a><a href="https://asset.bfw.wiki/model/0/0.html">图片分类模型</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a class="">面试招聘</a>
+
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+
+					<div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="javascript:alert('即将上线')"
+									title="为大家提供求职面试的信息">求职招聘</a>
+
+							</p>
+							<p>
+								<a href="javascript:alert('即将上线')">求职</a><a href="javascript:alert('即将上线')">招聘</a><a href="javascript:alert('即将上线')">接私活</a><a href="javascript:alert('即将上线')">找IT外包</a>
+							</p>
+						</div>
+
+					</div>
+								<div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="http://im.bfw.wiki/"
+									title="专为it人士打造的及时通讯系统">码聊BFWIM</a>
+
+							</p>
+							<p>
+								<a href="http://im.bfw.wiki/">it人士专用及时通讯系统</a>
+							</p>
+						</div>
+
+					</div>
+                     <div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="https://exam.bfw.wiki"
+									title="收集各大互联网公司it面试笔试题，在线模拟考试">IT笔试面试题库</a>
+							</p>
+							<p>
+								<a  href="https://exam.bfw.wiki/1/go/0.html">golang笔试题</a><a  href="https://exam.bfw.wiki/1/php/0.html">php笔试题</a><a href="https://exam.bfw.wiki/1/java/0.html">java笔试题</a><a  href="https://exam.bfw.wiki/1/python/0.html">python笔试题</a><a  href="https://exam.bfw.wiki/1/html/0.html">html前端笔试题</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-clear"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a class="">云空间</a>
+
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+
+					<div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="javascript:alert('即将上线')"
+									title="为IT开发者提供的专属云电脑桌面">云桌面</a>
+
+							</p>
+<p>
+								<a  class="bfw-nav-a" href="javascript:alert('即将上线')"
+									title="为IT开发者提供的专属云电脑桌面">专为IT技术人员打造的云电脑</a>
+
+							</p>
+						</div>
+
+					</div>
+								<div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a"
+									title="在线注册域名" href="//space.bfw.wiki/s?key=bfw">域名</a>
+
+							</p>
+							<p>
+								<a  class="bfw-nav-a" href="//space.bfw.wiki/s?key=bfw"
+									title="域名注册">顶级域名注册</a>
+										<a  class="bfw-nav-a" href="//space.bfw.wiki/s?key=bfw"
+									title="域名信息查询">域名信息查询</a>
+							</p>
+						</div>
+
+					</div>
+                     <div class="bfw-row-3 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a  class="bfw-nav-a" href="//space.bfw.wiki/"
+									title="为个人技术开发和学习者提供性价比极高的主机空间">云主机</a>
+							</p>
+							<p>
+							<a  class="bfw-nav-a" href="//space.bfw.wiki/"
+									title="为IT开发者html主机空间">Html空间</a>
+								<a  class="bfw-nav-a" href="//space.bfw.wiki/"
+									title="为IT开发者php主机空间">Php空间</a>
+									<a  class="bfw-nav-a" href="//space.bfw.wiki/"
+									title="为IT开发者java主机空间">Java空间</a>
+									<a  class="bfw-nav-a" href="//space.bfw.wiki/"
+									title="为IT开发者python主机空间">Python空间</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-clear"></div>
+				</div>
+			</div>
+		</div>
+	<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a href="https://www.bfw.wiki/FeedBack/AddData.html">我要吐槽</a>
+			</div>
+<!--
+		<div class="bfw-nav-item bfw-s-hide  bfw-m-hide bfw-pad-30 nav-item">
+
+			<a class="">部署运维</a>
+
+			<div>
+				<div
+					class="nav-item_sub bfw-hide bfw-row-ower bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c;  top: 5em; left: 0; z-index: 11111;">
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://www.bfw.wiki/bfwstudio.html"
+									title="体验在线开发PHP,在线开发JAVA">部署</a>
+							</p>
+							<p>
+								<a>加密解密</a><a>上传</a><a>验证</a><a>二维码</a><a>人工智能</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5 sub_menu_item">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://www.bfw.wiki/bfwstudio.html"
+									title="体验在线开发PHP,在线开发JAVA">html特效</a>
+							</p>
+							<p>
+								<a>加密解密</a><a>上传</a><a>验证</a><a>二维码</a><a>人工智能</a>
+							</p>
+						</div>
+
+					</div>
+					<div class="bfw-row-5">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://www.bfw.wiki/bfwstudio.html"
+									title="体验在线开发PHP,在线开发JAVA">系统源码</a>
+							</p>
+							<p>
+								<a>企业建站</a><a>电商</a><a>博客</a><a>大数据</a><a>人工智能</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://www.bfw.wiki/bfwstudio.html"
+									title="体验在线开发PHP,在线开发JAVA">设计图标</a>
+							</p>
+							<p>
+								<a>java</a><a>php</a><a>pthone</a><a>大数据</a><a>人工智能</a>
+							</p>
+						</div>
+
+					</div>
+
+					<div class="bfw-row-5">
+						<div class="bfw-pad-l">
+							<p>
+								<a href="https://www.bfw.wiki/bfwstudio.html"
+									title="体验在线开发PHP,在线开发JAVA">人工智能模型</a>
+							</p>
+							<p>
+								<a>java</a><a>php</a><a>pthone</a><a>大数据</a><a>人工智能</a>
+							</p>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+ -->
+
+<div class="bfw-nav-item bfw-pad-30 nav-item bfw-float-r bfw-l-hide"
+			style="padding-left: 0.4em !important;">
+			<a class=""><img
+				src="//img.bfw.wiki/static/Blog/image/menu.png" /></a>
+			<div>
+				<div class="nav-item_sub bfw-hide bfw-width-per bfw-pos-abs"
+					style="background: #2b2c2c; height: auto; top: 5em; right: 0; z-index: 11111;">
+
+					<ul>
+						<li style="text-align: left;"><a style="font-weight: bold;">技术学习</a> <a href="https://www.bfw.wiki/blog.html">技术博客</a> <a href="https://ask.bfw.wiki">技术问答</a></li>
+						<li style="text-align: left;"><a style="font-weight: bold;">在线开发</a> <a href="https://editor.bfw.wiki">html在线开发</a> <a href="https://tool.bfw.wiki">程序员工具箱</a> </li>
+						<li style="text-align: left;"><a style="font-weight: bold;">源码模板</a> <a href="https://one.bfw.wiki">js插件库</a> <a href="https://effect.bfw.wiki">html/css/js特效</a></li>
+				  				<li><a href="https://www.bfw.wiki/login.html">登录/注册</a></li>
+								 <li class="bfw-rower-clear"></li>
+				</ul>
+				</div>
+
+			</div>
+		</div>
+		<!-- <div class="bfw-nav-item bfw-pad-30  nav-item bfw-float-r bfw-l-hide"
+			style="padding-left: 0.4em !important; padding-right: 0.4em !important;">
+			<a href="https://www.bfw.wiki/Page/Search.html"><img
+				src="//img.bfw.wiki/static/Blog/image/search.png" /></a>
+		</div> -->
+
+				<div
+			class="bfw-nav-item  bfw-float-r nav-item bfw-s-hide" >
+			<a  href="https://www.bfw.wiki/Member/Center.html">
+ 				<div style="padding:18px;">
+				<img class="writer" style="height: 2em; width: 2em; margin: 0;"
+				alt=""
+				src="//img.bfw.wiki/static/Blog/image/avatar1.png?x-oss-process=image/auto-orient,1/resize,m_fill,w_100,h_100,/quality,q_90" />
+				</div>
+								</a>
+
+			<div class="bfw-pad-30">
+				<div class="nav-item_sub bfw-hide  bfw-pos-abs"
+					style="background: #2b2c2c; height: auto; width: 10em; top: 5em; right: 0; z-index: 11111;">
+
+					<ul>
+						<li><a href="https://www.bfw.wiki/Article/AddData.html"><i class="fa fa-wikipedia-w"></i> 发布博文</a></li>
+						<li><a href="https://www.bfw.wiki/Ask/AddData.html"><i class="fa fa-font"></i> 我要提问</a></li>
+						<li><a href="https://www.bfw.wiki/ProjCode/ListProjData.html"><i class="fa fa-leaf"></i> 我的项目</a></li>
+						<li><a href="https://www.bfw.wiki/ProjCode/ListCodeData.html"><i class="fa fa-terminal"></i> 我的代码</a></li>
+						<li><a href="https://www.bfw.wiki/ExamManage/ListData.html"><i class="fa fa-list-alt"></i> 我的错题</a></li>
+
+						<li><a
+							href="https://www.bfw.wiki/Collection/ListData.html"><i class="fa fa-heart-o"></i> 我的收藏</a></li>
+						 
+					</ul>
+				</div>
+
+			</div>
+
+		</div>
+
+<!-- 								 <div -->
+<!-- 			class="bfw-nav-item  bfw-pad-30 bfw-float-r nav-item bfw-s-hide  bfw-m-hide "> -->
+<!-- 			<a class="" href="https://www.bfw.wiki/login.html">登录/注册</a>
+		</div> -->
+
+
+	</div>
+</div>
+
+
+		<div class="bfw-middle">
+
+			<div
+				class="banner bfw-height-half bfw-over-hide bfw-width-per bfw-pos-rel"
+				style="color: #2596cc;">
+				<canvas id="back_cavas"></canvas>
+
+				<div class="bfw-height-half bfw-align-c bfw-pos-abs bfw-width-per"
+					style="z-index: 111;">
+
+					<h1 style="padding: 3em 1em 0 1em;">html/js/css网页特效代码</h1>
+					<p class="bfw-s-hide"
+						style="padding: 0em 1em 0em 1em; line-height: 1.875em;">
+						让你更快找到自己需要的网页特效代码</p>
+
+
+					<div class=" bfw-align-c bfw-s-row-100"
+						style="width: 83%; margin: 0 auto; height: 4em;">
+						<div class="bfw-row-owner search-bar bfw-m-row-100 bfw-s-row-90">
+							<div class="bfw-row-70">
+								<input class="bfw-width-per " onkeydown="keyup_submit(event);"
+									type="text" placeholder="请输入关键词搜索html/css/js特效"
+									style="height: 2.15em; padding: 0 0.5em; margin: 0;" id="qword"
+									value="" />
+							</div>
+							<div class="bfw-row-30 search-btn"
+								style="height: 2.15em; line-height: 2.15em; background: #2596cc; color: white;"
+								onclick="search();">搜索</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<div id="pagecont">
+				<div class="bfw-color-b-w bfw-s-row-100  bfw-clear"
+					style="width: 83%; margin: 0 auto;">
+					<div>
+						<h4 style="padding: 1em 0 0 1em;">热门标签</h4>
+						<div id="menu_cont" style="padding: 0.3125em;"
+							class="bfw-row-clear">
+							<ul class="menu" id="menu" style="width: 100%;">
+
+								<li class="bfw-nav-item"><a href="http://one.bfw.wiki/">jquery/js插件</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-background.html">背景</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-formbeautify.html">表单美化</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-upload.html">上传</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-table.html">表格</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-tab.html">选项卡</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-slider.html">幻灯片</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-star.html">星级评分</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-alertbox.html">弹出层</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-picker.html">选择器</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-chart.html">图表</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-layout.html">布局界面</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-imagezoom.html">图片放大</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-loadscroll.html">加载滚动</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-menunav.html">菜单导航</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-parallex.html">视觉差异</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-drag.html">拖放</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-search.html">搜索</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-hover.html">悬停</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-animate.html">动画</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-media.html">多媒体</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-threed.html">三维</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-eshop.html">电商</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-validate.html">验证</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-particle.html">粒子</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-redbag.html">红包</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-bigwheel.html">大转盘</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-fluid.html">瀑布流</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-loading.html">进度条</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-responsive.html">响应式</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-gallery.html">画廊相册</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-customerservice.html">在线客服</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-love.html">表白</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-fun.html">搞笑</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-game.html">游戏</a></li>
+														<li
+									class="bfw-nav-item "><a
+									href="/effect-other.html">其他</a></li>
+							
+							</ul>
+							<div class="bfw-row-clear"></div>
+					       
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365858288963060071.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211111/618c5164a4daf.gif" pngsrc="//img.bfw.wiki/uploadimg/20211111/618c516290e64.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211111/618c516290e64.png?x-oss-process=style/235_130"
+											title="css美化提交按钮点击显示进度条反馈动画效果代码" alt="css美化提交按钮点击显示进度条反馈动画效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365858288963060071.html">css美化提交按钮点击显示进度条反馈动画效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365858288963060071.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365858288963060071.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365856779556390052.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211111/618c50cda8a99.gif" pngsrc="//img.bfw.wiki/uploadimg/20211111/618c50cbf0ad7.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211111/618c50cbf0ad7.png?x-oss-process=style/235_130"
+											title="css实现菜单点击弹出子菜单动画效果代码" alt="css实现菜单点击弹出子菜单动画效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365856779556390052.html">css实现菜单点击弹出子菜单动画效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365856779556390052.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365856779556390052.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365854839920540044.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211111/618c500bad6d4.gif" pngsrc="//img.bfw.wiki/uploadimg/20211111/618c500932b9f.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211111/618c500932b9f.png?x-oss-process=style/235_130"
+											title="svg实现声音音频评率波形动画效果代码" alt="svg实现声音音频评率波形动画效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365854839920540044.html">svg实现声音音频评率波形动画效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365854839920540044.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365854839920540044.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365156162808340071.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b3f1fdb024.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b3f1e06d57.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b3f1e06d57.png?x-oss-process=style/235_130"
+											title="jquery实现一个层叠堆积图文卡片切换幻灯片效果代码" alt="jquery实现一个层叠堆积图文卡片切换幻灯片效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365156162808340071.html">jquery实现一个层叠堆积图文卡片切换幻灯片效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365156162808340071.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365156162808340071.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365368151248480019.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b91eec5d71.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b91ece721d.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b91ece721d.png?x-oss-process=style/235_130"
+											title="css实现一个竖的手风琴折叠菜单效果代码" alt="css实现一个竖的手风琴折叠菜单效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365368151248480019.html">css实现一个竖的手风琴折叠菜单效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365368151248480019.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365368151248480019.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365249131242780090.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b6370d4a18.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b636edf96e.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b636edf96e.png?x-oss-process=style/235_130"
+											title="css实现一键切换水晶球内昼夜森林小屋切换效果代码" alt="css实现一键切换水晶球内昼夜森林小屋切换效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365249131242780090.html">css实现一键切换水晶球内昼夜森林小屋切换效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365249131242780090.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365249131242780090.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365244184829420098.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b61821e6ee.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b617ff091a.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b617ff091a.png?x-oss-process=style/235_130"
+											title="axigear-360-viewer实现产品360度展示及放大效果代码" alt="axigear-360-viewer实现产品360度展示及放大效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365244184829420098.html">axigear-360-viewer实现产品360度展示及放大效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365244184829420098.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365244184829420098.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365300427463200034.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b777a85aff.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b7778c40a1.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b7778c40a1.png?x-oss-process=style/235_130"
+											title="css布局粉色波纹背景带导航条的单页效果代码" alt="css布局粉色波纹背景带导航条的单页效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365300427463200034.html">css布局粉色波纹背景带导航条的单页效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365300427463200034.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365300427463200034.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365272991640370052.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b6cc2dcb37.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b6cc0e029f.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b6cc0e029f.png?x-oss-process=style/235_130"
+											title="jquery+css实现动态圈圈上浮动画背景登录表单页面效果代码" alt="jquery+css实现动态圈圈上浮动画背景登录表单页面效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365272991640370052.html">jquery+css实现动态圈圈上浮动画背景登录表单页面效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365272991640370052.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365272991640370052.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365264382275780089.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b6965d1b83.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b6963e192c.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b6963e192c.png?x-oss-process=style/235_130"
+											title="css实现48种不同样式的按钮悬浮动画效果代码" alt="css实现48种不同样式的按钮悬浮动画效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365264382275780089.html">css实现48种不同样式的按钮悬浮动画效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365264382275780089.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365264382275780089.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365260404202670061.html"><img
+											class="bfw-width-per pic-preview" gifsrc="//img.bfw.wiki/uploadimg/20211110/618b67d810f27.gif" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b67d60b868.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b67d60b868.png?x-oss-process=style/235_130"
+											title="css实现20款不同风格的图片悬浮弹出文字按钮效果代码" alt="css实现20款不同风格的图片悬浮弹出文字按钮效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365260404202670061.html">css实现20款不同风格的图片悬浮弹出文字按钮效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365260404202670061.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365260404202670061.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						
+						<div class="bfw-row-4 bfw-s-row-100 plugin-item bfw-pos-rel">
+								<div class="bfw-mar-m bfw-over-h" style="height: 16em;">
+
+									<div class="bfw-width-per">
+										<a target="_blank" href="/effect/16365251412762740011.html"><img
+											class="bfw-width-per pic-preview" gifsrc="" pngsrc="//img.bfw.wiki/uploadimg/20211110/618b645516f49.png?x-oss-process=style/235_130" src="//img.bfw.wiki/uploadimg/20211110/618b645516f49.png?x-oss-process=style/235_130"
+											title="css绘制红色火星效果代码" alt="css绘制红色火星效果代码" /></a>
+									</div>
+									<div>
+										<p class="bfw-mar-l ">
+											<a target="_blank" href="/effect/16365251412762740011.html">css绘制红色火星效果代码</a>
+										</p>
+										<p
+											class="bfw-mar-l bfw-line-m bfw-pos-abs hover-tool bfw-hide">
+											<a class="bfw-btn-m bfw-float-l"
+												href="/effect/16365251412762740011.html" style="margin:10px;">在线预览</a> <a
+												href="http://studio.bfw.wiki/Studio/Open/lang/html/id/16365251412762740011.html"
+												target="_blank" class="bfw-btn-m bfw-float-r" style="margin:10px;background:white;color:grey;">在线编辑</a>
+										</p>
+
+									</div>
+								</div>
+							</div>
+						 <div class="bfw-row-clear"></div>
+    <div class="bfw-align-c bfw-row-owner"> <!--<div class="pagin">
+<div class="message">
+共<i class="blue">6687</i>条记录，当前显示第<i class="blue">&nbsp;1&nbsp;</i>页
+</div>
+<ul class="paginList">
+          <li class="paginItem current"><a href="/page-0.html">1</a></li>
+               <li class="paginItem "><a href="/page-1.html">2</a></li>
+               <li class="paginItem "><a href="/page-2.html">3</a></li>
+                    <li class="paginItem"><a href="/page-1.html"><span class="pagenxt"></span></a></li>
+     </ul>
+</div>
+  -->
+<style>
+.pager {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+
+.pager .page-item {
+	border: 1px solid #2596cc;
+	width: 30px;
+	padding: 3px;
+	margin: 10px;
+}
+
+.pager .page-item a {
+	display:block;
+	width: 30px;
+}
+
+.pager .page-actived {
+	background: #2596cc;
+}
+
+.pager .page-actived a:link {
+	color: white;
+}
+.pager .page-actived a:visited {
+	color: white;
+}
+</style>
+<div class="bfw-height-50 bfw-float-r"  >
+	<ul class="bfw-nav-bar pager">
+                                        
+                  <li class="page-actived bfw-nav-item page-item"><a
+			href="/page-0.html">1</a></li>
+       
+                        <li class="bfw-nav-item page-item"><a href="/page-1.html">2</a></li>
+       
+                        <li class="bfw-nav-item page-item"><a href="/page-2.html">3</a></li>
+       
+                     <li class="bfw-nav-item page-item"><a href="/page-1.html">»</a></li>
+   
+                                             </ul>
+
+</div>  <div class="bfw-row-clear"></div></div>
+						</div>
+
+
+					</div>
+
+				</div>
+			</div>
+		</div>
+<div class="bfw-footer  bfw-align-c bfw-color-b-b  bfw-pad-l"
+	style="color: #979393;">
+	<div style="font-size: 1.5625em; font-weight: bold; padding: 0.3125em;">BFW.WIKI
+		专业的互联网技术学习交流开发部署一站式平台</div>
+	<div class="bfw-row-ower">
+		<div class="bfw-row-3 bfw-s-row-100">
+			<p>技术学习</p>
+			<a href="https://blog.bfw.wiki">技术博客</a> <a
+				href="https://ask.bfw.wiki">技术问答</a>
+		</div>
+		<div class="bfw-row-3 bfw-s-row-100">
+			<p>在线开发</p>
+			<a href="https://editor.bfw.wiki">html在线开发</a> <a
+				href="https://tool.bfw.wiki">在线工具包</a>
+		</div>
+		<div class="bfw-row-3 bfw-s-row-100">
+			<p>源码模板</p>
+			<a href="https://one.bfw.wiki">js插件库</a> <a
+				href="https://effect.bfw.wiki">html模板特效</a>
+		</div>
+		<div class="bfw-row-clear"></div>
+	</div>
+
+	<div class="bfw-pad-l bfw-s-hide">
+		备案号：<a href="http://www.beian.gov.cn/portal/registerSystemInfo" target="_blank">苏ICP备19002694号</a>
+	</div>
+		<div class="bfw-pad-l ">
+		<a href="//www.bfw.wiki/Page/About" target="_blank">关于我们</a> <a href="//www.bfw.wiki/Page/Disclaimer" target="_blank">免责声明</a>
+	</div>
+</div>
+
+<script>
+document.body.addEventListener('touchstart',function(){});
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?2b23f5cacb729a5781075058209ceca4";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+function entersearch(e){  
+	var evt = window.event || e;
+	if (evt.keyCode == 13){
+		var key=document.getElementById("ask_keyword").value;
+		if(key!=""){
+		 	location.href="http://ask.bfw.wiki/Askpage/Search/key/"+key+".html";
+		}
+	  
+	}  
+} 
+
+</script>
+<style>
+.bfw-footer p {
+	font-weight: bold;
+}
+
+.bfw-footer a {
+	color: #979393;
+}
+
+.bfw-nav-a {
+	font-weight: bold;
+	color: #979393;
+}
+</style>
+	</div>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8764916505203840"
+     crossorigin="anonymous"></script>
+</body>
+</html>
