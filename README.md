@@ -5,4 +5,4 @@
 
 [Wavemaker](w.html)
 
-[怎样在kahoot中使用很长的名字？](why.md)
+[How do I use a long name in kahoot?](why.md)
