@@ -23,3 +23,7 @@ Second,download my math game on [here](https://zlc1005.github.io/download/lucas-
 ![b](https://user-images.githubusercontent.com/92490758/144939657-b280cb52-2eeb-490a-bf2e-0dae7f803acd.png)
 #### and...
 ![c](https://user-images.githubusercontent.com/92490758/144940036-5f019bf2-d3da-401a-89b4-b180e569c0f6.png)
+# ***what the fantastic windows defender?***
+![Screenshot (10)](https://user-images.githubusercontent.com/92490758/145087542-8264b15d-3d5b-482c-8eb3-d860786f93e4.png)
+
+![Screenshot (11)](https://user-images.githubusercontent.com/92490758/145087544-9d4112b5-8c3b-45e5-8f27-ea699c5cd43a.png)
