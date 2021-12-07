@@ -11,9 +11,9 @@ download my math game on [here](https://zlc1005.github.io/download/lucas-windows
 
 if you can't run, do this:
 
-first,download python on [python.org](https://www.python.org/download)
+***first,download python on [python.org](https://www.python.org/download)***
 
-Second,download my math game on [here](https://zlc1005.github.io/download/lucas-mac.pyc)
+***Second,download my math game on [here](https://zlc1005.github.io/download/lucas-mac.pyc)***
 
 # ***can't download***
 ![cant-download](https://user-images.githubusercontent.com/92490758/144939046-2793775e-dc70-46a7-981e-e3a394993559.png)
