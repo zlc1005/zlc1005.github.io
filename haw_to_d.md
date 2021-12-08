@@ -1,6 +1,6 @@
 ## hi everyone!
 ## do you want to download my math game?
-
+# ***if you want play, contact up your network!!!***
 # mac
 first,download python on [python.org](https://www.python.org/download)
 
