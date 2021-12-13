@@ -15,6 +15,8 @@ if you can't run, do this:
 
 ***Second,download my math game on [here](https://zlc1005.github.io/download/lucas-mac.pyc)***
 
+# chrome book 
+***???***
 # ***can't download***
 ![cant-download](https://user-images.githubusercontent.com/92490758/144939046-2793775e-dc70-46a7-981e-e3a394993559.png)
 #### click here
